@@ -8,16 +8,8 @@
         image. So actually, it should be called cartoonify... but what ever.
     </p>
     <form action="/" method="POST" enctype="multipart/form-data">
-        <p>
-            <input type="file" name="img_file">
-        </p>
-        <p>
-            If you are not a robot, please answer me, what is two plus three:<br>
-            <input type="text" name="answer">
-        </p>
-        <p>
-            <input type="submit" value="Gimpify">
-        </p>
+        <p><input type="file" name="img_file"></p>
+        <p><input type="submit" value="Gimpify"></p>
     </form>
     <hr>
     <p>
@@ -25,7 +17,7 @@
     </p>
     <p>
         Click on the image<br>
-        <a href="/cartoon"><img src="/img/test.jpg"></a>
+        <a href="/example"><img src="{{ url_for('static', filename='img/test.jpg') }}"></a>
     </p>
     <p>(<a href="http://www.flickr.com/photos/dlebech/8060009796/">It's my dog Mila</a>)</p>
     <p>Get the <a href="https://github.com/dlebech/gimpify">code for Gimpify</a>.</p>
